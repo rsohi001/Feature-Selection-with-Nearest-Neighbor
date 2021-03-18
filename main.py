@@ -145,7 +145,7 @@ print("Welcome to Rahul Sohi's Feature Selection Algorithm")
 textfile = input("Type in the name of the file to test: ")
 data = np.genfromtxt(textfile)
 choice = input("Type the number of the algorithm you want to run: \n   1) Forward Selection \n   2) Backwards Selection \n")
-if choice == 1:
+if int(choice) == 1:
     feature_search_demo_forwards(data)
 else:
     feature_search_demo_backwards(data)
